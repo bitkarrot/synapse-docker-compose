@@ -3,7 +3,7 @@ version: "3.7"
 services:
     matrix:
         container_name: matrix
-        image: matrixdotorg/synapse:v1.44.0
+        image: matrixdotorg/synapse:latest
         user: "1000:1000"
         restart: on-failure
         stop_grace_period: 1m
@@ -14,7 +14,7 @@ services:
         environment:
             UID: "1000"
             GID: "1000"
-            SYNAPSE_SERVER_NAME: "matrix.nolim1t.co"
+            SYNAPSE_SERVER_NAME: "burrow.land"
             SYNAPSE_REPORT_STATS: "no"
             SYNAPSE_NO_TLS: "yes"
         network_mode: "host"
